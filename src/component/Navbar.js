@@ -13,7 +13,7 @@ export default function Navbar({setTheme}) {
           <div className="logo">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGZVurt8r1so9YWuK5gV3pIVuhxgzg-dvUhm4bdcUAaMZPNpu9PI9KzWPGPDB7HqUHw&usqp=CAU"
-              alt=""
+              alt="something"
             />
           </div>
           </NavLink>
@@ -22,7 +22,7 @@ export default function Navbar({setTheme}) {
           <div className="content1">
             <NavLink to="/" className={({ isActive, isPending}) =>{
               return isActive ? "red" :"blue";
-            }}>
+            }}aria-label="Home">
          
                 <i class="fa-solid fa-house"></i>
              
@@ -84,7 +84,7 @@ export default function Navbar({setTheme}) {
                 className=" dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+          
                 style={{
                   width: "40px",
                   height:"45px",
